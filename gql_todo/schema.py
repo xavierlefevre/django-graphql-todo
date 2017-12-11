@@ -7,4 +7,8 @@ class Query(gql_todo.todo_list.schema.Query, ObjectType):
     pass
 
 
-schema = Schema(query=Query)
+class Mutation(gql_todo.todo_list.schema.Mutation, ObjectType):
+    pass
+
+
+schema = Schema(query=Query, mutation=Mutation)
